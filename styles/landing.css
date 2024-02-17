@@ -22,7 +22,7 @@ html {
 }
 
 .responsive-three-column-grid>button:hover {
-    background-color: #393939;
+    background-color: #181818;
     color: white;
     transition: 0.2s ease-in-out;
 }
@@ -58,14 +58,26 @@ footer {
 }
 
 .navbar>ul>.logo {
-    margin-right: 1rem;
+    margin-right: 2rem;
     width: 5%;
     height: 2%;
 }
 
+
 .navbar>.searchbar {
     margin-right: 3rem;
+
 }
+
+input[type="text"],
+textarea {
+    background-color: #3f3f3f;;
+    color: white;
+    border: none; 
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+
 
 ul {
     display: flex;
@@ -76,7 +88,7 @@ ul {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    background-color: #242424;
+    background-color: #181818;
     border-radius: 1rem;
 }
 
