@@ -13,6 +13,18 @@ html {
 .responsive-three-column-grid>button {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+    border-radius: 0.5rem;
+
+    border-color: #000000;
+    background-color: white;
+    border-style: solid;
+
+}
+
+.responsive-three-column-grid>button:hover {
+    background-color: #393939;
+    color: white;
+    transition: 0.2s ease-in-out;
 }
 
 @media (min-width:768px) {
@@ -22,8 +34,6 @@ html {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-
 
 main {
     margin: auto;
@@ -39,31 +49,59 @@ footer {
     text-align: center;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 0;
+}
+
+.navbar>ul>.logo {
+    margin-right: 1rem;
+    width: 5%;
+    height: 2%;
+}
+
+.navbar>.searchbar {
+    margin-right: 3rem;
+}
+
 ul {
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
     overflow: hidden;
-    background-color: #333;
+    background-color: #242424;
+    border-radius: 1rem;
 }
 
 li {
     float: left;
     color: white;
-    margin: 0 10rem;
+    margin: 0 7rem;
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1.2rem;
     text-decoration: none;
+    width: 100%;
+
+
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #3c3c3c;
+    color: white;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.5rem;
 }
 
 h1 {
@@ -83,7 +121,7 @@ h2 {
     margin-top: 2%;
     width: 100%;
     color: black;
-    background-color: aliceblue;
+    background-color: rgb(221, 221, 221);
     display: flex;
     justify-content: center;
     align-items: center;
