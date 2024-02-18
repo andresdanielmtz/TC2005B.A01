@@ -84,7 +84,7 @@ header {
 
 .searchbar>img {
     width: 1.5rem;
-    height: auto;
+    height: 1.5rem;
 }
 
 
@@ -125,14 +125,12 @@ article p {
 .reference {
     display: flex;
     flex-direction: column;
-
     align-self: flex-start;
 
 }
 
 input[type="text"],
 textarea {
-
     color: rgb(0, 0, 0);
     border: none;
     padding: 1rem;
@@ -144,8 +142,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
     border-color: black;
 
     width: 100%;
