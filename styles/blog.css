@@ -1,17 +1,28 @@
 html {
     font-family: "Roboto", sans-serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding-left: 12rem;
+    padding-right: 12rem;
 }
 
 ::selection {
     background-color: #000000;
     color: #ffffff;
+}
+
+a::selection { 
+    background-color: rgb(104, 146, 255);
+    color: #ffffff;
+
+}
+
+h2 {
+    font-size: 2rem;
 
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 6rem;
 }
 
 .logo {
@@ -50,7 +61,6 @@ header {
 }
 
 .searchbar {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,28 +68,25 @@ header {
     padding: 1rem;
     border-radius: 2rem;
     font-size: 1.2rem;
-
     height: 2rem;
     width: 20rem;
     border: 2px solid #000000;
 
-
-
 }
 
-.searchbar input {
+
+.searchbar>input {
     border: none;
-    padding: 1rem;
     border-radius: 0.5rem;
     width: 100%;
+    margin-left: 0.5rem;
 }
 
-.vertical-divider {
-    border-left: 10px solid black;
-    height: 100%;
-    margin: 0 1rem;
-    background-color: black;
+.searchbar>img {
+    width: 1.5rem;
+    height: auto;
 }
+
 
 .important-actions>* {
     display: flex;
@@ -125,7 +132,7 @@ article p {
 
 input[type="text"],
 textarea {
-    background-color: #fcfcfc;
+
     color: rgb(0, 0, 0);
     border: none;
     padding: 1rem;
@@ -166,10 +173,14 @@ ul {
 
 li {
     float: left;
-    background-color: white;
+
 }
 
 @media (max-width: 768px) {
+    html { 
+        padding-left: 0;
+        padding-right: 0;
+    }
     section {
         flex-direction: column;
     }
@@ -177,10 +188,6 @@ li {
     section>article {
         margin: 1rem;
         padding: 5%;
-    }
-
-    .vertical-divider {
-        display: none;
     }
 
     .logo>img {
