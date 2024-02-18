@@ -10,7 +10,7 @@ html {
     color: #ffffff;
 }
 
-a::selection { 
+a::selection {
     background-color: rgb(104, 146, 255);
     color: #ffffff;
 
@@ -177,10 +177,11 @@ li {
 }
 
 @media (max-width: 768px) {
-    html { 
+    html {
         padding-left: 0;
         padding-right: 0;
     }
+
     section {
         flex-direction: column;
     }
