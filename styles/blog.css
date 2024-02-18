@@ -1,8 +1,8 @@
 html {
     font-family: "Roboto", sans-serif;
     background-color: rgb(255, 255, 255);
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 17rem;
+    padding-right: 17rem;
 }
 
 ::selection {
@@ -84,7 +84,11 @@ header {
 
 .searchbar>img {
     width: 1.5rem;
-    height: 1.5rem;
+    height: 100%;
+}
+
+.searchbar>img:hover {
+    cursor: pointer;
 }
 
 
