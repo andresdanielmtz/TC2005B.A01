@@ -22,6 +22,18 @@ h2 {
 
 }
 
+h5 {
+
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 0;
+    width: 100%;
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+}
 
 .blog-title {
     font-size: 3rem;
@@ -42,7 +54,7 @@ h2 {
 }
 
 a {
-    font-weight: 4 00;
+    font-weight: 400;
     color: rgb(104, 146, 255);
 
 }
@@ -111,14 +123,16 @@ header {
     margin-left: 4%;
     margin-bottom: auto;
     margin-top: auto;
+    font-size: 1.2rem;
 }
 
 .date {
     font-size: 1rem;
 }
 
-article h1 {
-    font-size: 2rem;
+article .blog-title {
+    font-size: 2.4rem;
+    font-weight: 600;
 
 }
 

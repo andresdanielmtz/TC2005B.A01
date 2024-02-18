@@ -57,10 +57,11 @@ footer {
     padding-right: 0;
 }
 
-.navbar>ul>.logo {
+.navbar > .logo { 
     margin-right: 2rem;
     width: 5%;
     height: 2%;
+
 }
 
 
@@ -78,6 +79,9 @@ textarea {
     border-radius: 0.5rem;
 }
 
+nav { 
+    background-color: #181818;
+}
 
 ul {
     display: flex;
