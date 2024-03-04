@@ -3,6 +3,7 @@ html {
     background-color: rgb(255, 255, 255);
     padding-left: 17rem;
     padding-right: 17rem;
+    margin: 0;
 }
 
 ::selection {
@@ -73,6 +74,7 @@ header {
 
 
 }
+
 
 .searchbar {
     display: flex;
@@ -215,6 +217,27 @@ li {
     .searchbar {
         display: none;
     }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .left-sidebar {
+        margin-left: 2rem;
+    }
+
+    #content {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+
 
 
 }

@@ -1,14 +1,8 @@
 html {
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
-.responsive-three-column-grid {
-    display: block;
-}
-
-.responsive-three-column-grid>* {
-    padding: 1rem;
-}
 
 .responsive-three-column-grid>button {
     margin-left: 2.5rem;
@@ -21,17 +15,93 @@ html {
 
 }
 
+.responsive-three-column-grid>* {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
 .responsive-three-column-grid>button:hover {
     background-color: #181818;
     color: white;
     transition: 0.2s ease-in-out;
 }
 
-@media (min-width:768px) {
+.navbar-img-searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-img-searchbar>img {
+    width: 20%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.navbar>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+    margin-right: 2rem;
+
+}
+
+.navbar-img-searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-img-searchbar>img {
+    padding-bottom: 0;
+    width: 10%;
+    height: auto;
+    margin-right: 2rem;
+}
+
+@media (max-width:768px) {
     .responsive-three-column-grid {
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .responsive-three-column-grid>* {
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+
+    .navbar>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: 0;
+        margin-right: 2rem;
+
+    }
+
+    .navbar-img-searchbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-img-searchbar>img {
+        width: 25%;
+        height: auto;
+        padding-bottom: 2rem;
     }
 }
 
@@ -57,7 +127,7 @@ footer {
     padding-right: 0;
 }
 
-.navbar > .logo { 
+.navbar>.logo {
     margin-right: 2rem;
     width: 5%;
     height: 2%;
@@ -72,14 +142,15 @@ footer {
 
 input[type="text"],
 textarea {
-    background-color: #3f3f3f;;
+    background-color: #3f3f3f;
+    ;
     color: white;
-    border: none; 
+    border: none;
     padding: 0.4rem;
     border-radius: 0.5rem;
 }
 
-nav { 
+nav {
     background-color: #181818;
 }
 
